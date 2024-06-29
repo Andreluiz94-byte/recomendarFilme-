@@ -1,0 +1,203 @@
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    /* Fonte Roboto */
+    background: linear-gradient(to bottom right, #f3f3f3, #c0c0c0);
+    /* Gradiente suave como cor de fundo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+    margin: 0;
+    background-image: url('./images/OIG8.jfif');
+    /* Imagem de fundo */
+    background-position: center;
+    background-repeat: no-repeat;
+    /* Impede a repetição da imagem de fundo */
+    background-size: 100% 100%;
+    /* Tamanho da imagem de fundo */
+}
+.container {
+    background-color: rgba(17, 17, 17, 0.8);
+    /* Fundo semi-transparente */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    /* Sombra sutil */
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+    position: relative;
+    top: -100px;
+    /* Ajuste de posicionamento */
+    margin-top: -50px;
+    /* Ajuste de posicionamento */
+    color: #ecebeb;
+    /* Cor do texto */
+}
+
+/* Heading Styles */
+h1 {
+    color: #ffffff;
+    /* Texto branco */
+    font-size: 36px;
+    /* Tamanho de fonte maior */
+    margin-bottom: 20px;
+}
+
+/* Form Styles */
+label {
+    display: block;
+    margin-bottom: 10px;
+    color: #ccc;
+    /* Texto cinza claro */
+    font-size: 16px;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #333;
+    /* Bordas escuras */
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: #dbdada;
+ 
+}
+
+button {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 4px;
+    background-color: #e50914;
+    /* Vermelho Netflix */
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff3e41;
+    /* Vermelho Netflix mais claro no hover */
+}
+
+/* Hidden Class */
+.hidden {
+    display: none;
+}
+
+/* Recommendation Styles */
+#recommendation {
+    margin-top: 30px;
+    width: 100%;
+    max-width: 600px;
+    position: relative;
+    top: 20px;
+    margin-bottom: 20px;
+}
+
+#recommendation h2 {
+    margin-bottom: 20px;
+    color: #fff;
+    /* Texto branco */
+    font-size: 24px;
+}
+
+/* Movie List Styles */
+.movie-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    /* Layout responsivo com grid */
+    gap: 20px;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+/* Movie Item Styles */
+.movie-item {
+    background-color: #030101;
+    /* Fundo mais escuro para os itens */
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    /* Sombra mais forte */
+    transition: transform 0.3s ease;
+}
+
+.movie-item:hover {
+    transform: scale(1.03);
+    /* Ajuste de escala no hover */
+}
+
+.movie-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.movie-item div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.movie-item div span {
+    font-size: 14px;
+    color: #ccc;
+    /* Cinza claro */
+    margin-bottom: 5px;
+}
+
+.movie-item div span.title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    /* Texto branco */
+    margin-bottom: 10px;
+}
+
+#newSearchBtn {
+    margin-top: 20px;
+    padding: 12px 40px;
+}
+
+/* Media Queries for Responsiveness */
+@media only screen and (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    input {
+        width: calc(100% - 32px);
+    }
+
+    button {
+        padding: 12px 20px;
+    }
+
+    #recommendation {
+        max-width: 100%;
+        width: 100%;
+        margin-top: 20px;
+        position: static;
+    }
+
+    .movie-list {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        /* Ajuste para telas menores */
+    }
+}

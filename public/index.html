@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscador de Filmes: Encontre o Filme Perfeito para Você</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/variables.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <h1 id="Title">Descubra Filmes por Título</h1>
+        <div class="LowImage">
+            <br><br>  
+        </div>
+
+        <br><br>
+        <p id="introText">Já passou pela situação de tentar lembrar o nome de um filme, mas só recordar parte dele? "Eu vi um filme ótimo chamado... como era mesmo?" Às vezes, nem mesmo o Google ajuda. Este site resolve esse problema. Encontre o filme que você não consegue lembrar o nome ou busque por um título bizarro que você inventou, como "dasd", vai que existe e você conhece uma grande obra cinematográfica! Além disso, você pode encontrar o filme em qualquer idioma!</p>
+
+        <br><br>
+        <form id="movieForm">
+            <label for="genre">Digite o nome do filme que deseja buscar:</label>
+            <input type="text" id="genre" name="genre" required>
+
+            <br> <br>
+            <button type="submit">Buscar</button>
+        </form>
+        <br><br>
+      
+
+        <div id="recommendation" class="hidden">
+            <br><br><br><br>
+            <button id="newSearchBtn" class="hidden">Nova Busca</button>
+            <br><br>
+            <div id="movieList" class="movie-list"></div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

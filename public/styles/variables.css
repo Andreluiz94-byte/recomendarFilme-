@@ -1,0 +1,23 @@
+:root {
+    --background-color: #1a1a2e;
+    --background-gradient: linear-gradient(135deg, #1a1a2e, #16213e);
+    --text-color: #ffffff;
+    --primary-color: #fca311;
+    --primary-hover-color: #ffd166;
+    --accent-color: #aefcff;
+    --secondary-color: #06d6a0;
+    --container-background: rgba(255, 255, 255, 0.1);
+    --box-shadow-color: rgba(0, 0, 0, 0.2);
+    --form-border-color: #fca311;
+    --trailer-message-background: #ffffff;
+    --trailer-message-text: #000000;
+    --body-font: 'Roboto', sans-serif;
+    --heading-font-size: 2.5rem;
+    --paragraph-font-size: 1.1rem;
+    --label-font-size: 1.2rem;
+    --input-font-size: 1rem;
+    --button-font-size: 1rem;
+    --title-font-weight: 700;
+    --overview-margin-bottom: 10px;
+    --vote-average-font-size: 1rem;
+}
